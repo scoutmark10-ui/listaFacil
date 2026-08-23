@@ -15,7 +15,7 @@
 
 .header-logo {
 	background-color: var(--primary);
-	color: var(--text);
+	color: var(--surface);
 	padding: 5px 15px;
 	border-radius: 6px;
 }

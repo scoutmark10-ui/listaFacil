@@ -66,20 +66,22 @@
 						type="search"
 						name="search"
 						id="search"
+						class="form-input"
 						placeholder="Pesquisar produtos"
 					/>
-					<select name="filtro" id="filtro">
+					<select name="filtro" id="filtro" class="form-input">
 						<option value="list-filter">Todos</option>
 						<option value="list-filter">Comprados</option>
 						<option value="list-filter">Pendentes</option>
 					</select>
 
-					<button id="openModal" type="button">+ Adicionar</button>
+					<button class="btn" id="openModal" type="button">+ Adicionar</button>
 				</div>
 
 				<div class="produtos" id="produtos">
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -88,6 +90,7 @@
 					</div>
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -96,6 +99,7 @@
 					</div>
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -104,6 +108,7 @@
 					</div>
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -112,6 +117,7 @@
 					</div>
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -120,6 +126,7 @@
 					</div>
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -128,6 +135,7 @@
 					</div>
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -136,6 +144,7 @@
 					</div>
 					<div class="card-produto">
 						<p id="produto-nome">Leite</p>
+						<span>-</span>
 						<span id="produto-preco">120 <span id="currency">MT</span></span>
 						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
 						<button class="btnRemover">
@@ -174,8 +183,8 @@
 				</div>
 
 				<div class="form-action">
-					<button class="btn" id="cancelarBtn">Cancelar</button>
-					<button class="btn" id="addProduto">Adicionar</button>
+					<button id="cancelarBtn">Cancelar</button>
+					<button id="addProduto">Adicionar</button>
 				</div>
 			</div>
 		</div>

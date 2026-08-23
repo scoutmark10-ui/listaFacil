@@ -4,8 +4,8 @@
 
 .btn {
 	padding: 10px 20px;
-	border-radius: 12px;
-	color: var(--surface);
+	border-radius:6px;
+	color: var(--surface); 
 	font-weight: 500;
 	border: 1px solid var(--border);
 	background-color: var(--primary);
@@ -13,9 +13,24 @@
 }
 
 .closeModal {
-	padding: 6px 8px;
+	align-self: flex-end;
+	padding: 8px 12px;
 	border-radius: 6px;
 	border: none;
-	margin-left: 95%;
 	cursor: pointer;
+}
+
+.btnEditar, .btnRemover {
+	color: var(--surface);
+	border: none;
+	border-radius: 6px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.btnRemover {
+	background-color: var(--erro);
+}
+.btnEditar {
+	background-color: var(--primary);
 }

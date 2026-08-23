@@ -2,10 +2,24 @@
 /*                          CARD
 /* ======================================================== */
 
-.card {
+.card,
+.card-produto {
+	background-color: var(--surface);
 	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 15px;
+}
+
+.card {
+	width: 100%;
+	max-width: 220px;
 }
 
 .card-produto {
-	border: 1px solid var(--border);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	max-width: 220px;
 }
