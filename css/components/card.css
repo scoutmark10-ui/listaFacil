@@ -7,19 +7,17 @@
 	background-color: var(--surface);
 	border: 1px solid var(--border);
 	border-radius: 8px;
-	padding: 15px;
 }
 
 .card {
-	width: 100%;
-	max-width: 220px;
+	padding: 25px;
 }
 
 .card-produto {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 25px;
 	gap: 10px;
 	width: 100%;
-	max-width: 220px;
 }

@@ -43,6 +43,7 @@
 }
 
 .form-input {
+	color: var(--text-secondary);
 	background-color: var(--surface);
 	padding: 10px;
 	border: 1px solid var(--border);
