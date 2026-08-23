@@ -1,0 +1,25 @@
+/* ======================================================== */
+/*                          VARIABLES
+/* ======================================================== */
+
+:root {
+	--bg: #f8fafc;
+	--bg-header: rgba(255, 255, 255, 0.5);
+	--bg-modal: rgba(255, 255, 255, 0.1);
+	--surface: #fff;
+	--text: #0f172a;
+	--text-secondary: #64748b;
+	--border: #e2e8f0;
+	--primary: #2363eb;
+	--success: #16a34a;
+	--erro: #dc2626;
+}
+
+.dark-theme {
+	--bg: #040405;
+	--bg-header: rgba(255, 255, 255, 0.075);
+	--surface: #090d18;
+	--text: #f8fafc;
+	--border: #232425ab;
+	--primary: #0c4cd6;
+}

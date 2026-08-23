@@ -1,0 +1,18 @@
+/* ======================================================== */
+/*                          CONTAINER
+/* ======================================================== */
+
+.container-product {
+	padding: 15px;
+}
+
+.container-card {
+	padding: 15px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 60px;
+}

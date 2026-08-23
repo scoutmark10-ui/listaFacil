@@ -1,0 +1,11 @@
+/* ======================================================== */
+/*                          BASE
+/* ======================================================== */
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	line-height: 1.6;
+}

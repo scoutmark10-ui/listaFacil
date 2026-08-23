@@ -1,0 +1,21 @@
+/* ======================================================== */
+/*                          BUTTONS
+/* ======================================================== */
+
+.btn {
+	padding: 10px 20px;
+	border-radius: 12px;
+	color: var(--surface);
+	font-weight: 500;
+	border: 1px solid var(--border);
+	background-color: var(--primary);
+	cursor: pointer;
+}
+
+.closeModal {
+	padding: 6px 8px;
+	border-radius: 6px;
+	border: none;
+	margin-left: 95%;
+	cursor: pointer;
+}

@@ -1,0 +1,57 @@
+/* ======================================================== */
+/*                          MODAL
+/* ======================================================== */
+
+.modal {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bg-modal);
+	backdrop-filter: blur(10px);
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.modal-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--surface);
+	color: var(--text);
+	margin: 10px auto;
+	padding: 30px;
+	border: 1px solid var(--border);
+	border-radius: 12px;
+}
+
+.form-title {
+	font-size: 18px;
+	margin: 10px;
+}
+
+.form-item {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+
+.form-input {
+	background-color: var(--border);
+	padding: 8px;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+}
+
+.form-action {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	gap: 30px;
+}
