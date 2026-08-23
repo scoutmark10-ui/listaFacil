@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-MZ">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ListaFácil</title>
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<!-- Googleapis -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- phosphor-icons -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-logo">L</div>
+			<h1 class="header-title">ListaFácil</h1>
+			<div class="toogle-theme">
+				<i class="ph ph-moon"></i>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="container-card">
+				<div class="card">
+					<p>Total</p>
+					<span id="total">0</span>
+				</div>
+
+				<div class="card">
+					<p>Comprados</p>
+					<span id="comprados">0</span>
+				</div>
+
+				<div class="card">
+					<p>Pendentes</p>
+					<span id="pendentes">0</span>
+				</div>
+
+				<div class="card">
+					<p>Valor Total</p>
+					<p>
+						<span id="valor_total">0</span> <span class="currency">MT</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="container-product">
+				<div class="header-product">
+					<input
+						type="search"
+						name="search"
+						id="search"
+						placeholder="Pesquisar produtos"
+					/>
+					<select name="filtro" id="filtro">
+						<option value="list-filter">Todos</option>
+						<option value="list-filter">Comprados</option>
+						<option value="list-filter">Pendentes</option>
+					</select>
+
+					<button id="openModal" type="button">+ Adicionar</button>
+				</div>
+
+				<div class="produtos" id="produtos">
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+					<div class="card-produto">
+						<p id="produto-nome">Leite</p>
+						<span id="produto-preco">120 <span id="currency">MT</span></span>
+						<button class="btnEditar"><i class="ph ph-note-pencil"></i></button>
+						<button class="btnRemover"><i class="ph ph-trash-simple"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- MODAL -->
+
+		<div class="modal" id="modal">
+			<div id="modal-card" class="modal-card">
+				<button class="closeModal" id="closeModal">X</button>
+				<h1 class="form-title">Novo Produto</h1>
+
+				<div class="form-item">
+					<label class="form-label">Nome</label>
+					<input
+						id="nome"
+						class="form-input"
+						type="text"
+						placeholder="Nome do produto"
+					/>
+				</div>
+
+				<div class="form-item">
+					<label class="form-label">Preço</label>
+					<input
+						id="preco"
+						class="form-input"
+						type="number"
+						placeholder="Preço"
+					/>
+				</div>
+
+				<div class="form-action">
+					<button class="btn" id="cancelarBtn">Cancelar</button>
+					<button class="btn" id="addProduto">Adicionar</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>
